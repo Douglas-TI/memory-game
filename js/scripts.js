@@ -3,11 +3,37 @@ const cards = document.querySelectorAll('.card');
 let isFirstCardFlipped = false;
 let firstCard, secondCard;
 
-(function shuffle() {
-  cards.forEach(card => {
-    card.style.order = Math.floor(Math.random() * 16);
-  });
-})();
+let totalFlippedCards = 14;
+const totalCards = 16;
+
+let timeleft = 30;
+let timerIsRunning = true;
+let countdownTimer;
+
+function startCountdown() {
+  countdownTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdown").textContent = timeleft;
+    if(timeleft <= 0) 
+      window.open('loss.html', '_self');
+  }, 1000);
+}
+
+startCountdown();
+
+document.getElementById("pause").addEventListener("click", function() {
+  if (timerIsRunning) {
+    clearInterval(countdownTimer);
+    timerIsRunning = false;
+  } else {
+    startCountdown();
+    timerIsRunning = true;
+  }
+});
+
+cards.forEach(card => {
+  card.style.order = Math.floor(Math.random() * totalCards);
+});
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -51,6 +77,10 @@ function disableCardPair() {
   secondCard.removeEventListener('click', flipCard);
 
   resetVariables();
+  totalFlippedCards += 2;
+
+  if(totalFlippedCards == totalCards)
+    window.open('win.html', '_self');
 }
 
 function unflipCardPair() {
