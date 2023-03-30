@@ -3,33 +3,28 @@ const cards = document.querySelectorAll('.card');
 let isFirstCardFlipped = false;
 let firstCard, secondCard;
 
-let totalFlippedCards = 14;
+let totalFlippedCards = 0;
 const totalCards = 16;
 
-let timeleft = 30;
+let timeleft = 40;
 let timerIsRunning = true;
 let countdownTimer;
 
 function startCountdown() {
   countdownTimer = setInterval(function(){
     timeleft--;
-    document.getElementById("countdown").textContent = timeleft;
+
+    let minutes = Math.floor(timeleft / 60);
+    let seconds = timeleft % 60;
+    let formattedTime = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+    document.getElementById("countdown").textContent = formattedTime;
     if(timeleft <= 0) 
       window.open('loss.html', '_self');
   }, 1000);
 }
 
 startCountdown();
-
-document.getElementById("pause").addEventListener("click", function() {
-  if (timerIsRunning) {
-    clearInterval(countdownTimer);
-    timerIsRunning = false;
-  } else {
-    startCountdown();
-    timerIsRunning = true;
-  }
-});
 
 cards.forEach(card => {
   card.style.order = Math.floor(Math.random() * totalCards);
