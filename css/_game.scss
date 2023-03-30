@@ -1,7 +1,4 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   background-image: url('../assets/imgs/game/background.svg');
 }
 
@@ -23,13 +20,13 @@ body {
 #owl {
   position: absolute;
   left: 10%;
-  bottom: 1.5%;
+  bottom: 1%;
 }
 
 #lion {
   position: absolute;
   right: 10%;
-  bottom: 1.5%;
+  bottom: 1%;
 }
 
 #countdown {
