@@ -5,12 +5,35 @@
 
   <title>Jogo da Memória</title>
 
-  <link rel="stylesheet" href="css/main.scss">
+  <link rel="stylesheet" href="../css/main.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="index">
+
+  <header>
+    <img id="jogo-memoria-logo-1" src="assets/imgs/index/jogo-memoria-logo-1.png" alt="Logo Jogo da Memoria">
+  </header>
+
+  <main>
+    <p id="instrucoes-jogo">
+      Combine as cartas clicando em uma de cada vez, você terá 40 segundos.
+    </p>
+    <p id="boa-sorte">
+      Boa sorte!
+    </p>
+    <a href="pages/game.html">
+      <button class="button-iniciar">
+        <img src="assets/imgs/index/bt-bg-pink.svg" alt="Botão Iniciar">
+        <span class="button-iniciar-text">INICIAR</span>
+      </button>
+    </a>
+  </main>
 
   <footer>
-    <a href="pages/game.html"><button>Iniciar</button></a>
+    <img class="love-care-mili-logo" src="assets/imgs/common/love-care-mili-logo.svg" alt="Botão Iniciar">
   </footer>
  
   <script src="js/scripts.js"></script>

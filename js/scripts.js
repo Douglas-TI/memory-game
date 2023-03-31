@@ -24,8 +24,6 @@ function startCountdown() {
   }, 1000);
 }
 
-startCountdown();
-
 cards.forEach(card => {
   card.style.order = Math.floor(Math.random() * totalCards);
 });

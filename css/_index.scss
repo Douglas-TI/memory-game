@@ -1,1 +1,76 @@
+body.index {
+    background-image: url('../assets/imgs/common/bg-stripped-blue.svg');
+}
 
+.button-iniciar {
+    position: fixed; 
+    display: inline-block;
+    background: transparent;
+    border: none;
+    top: 80.8%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+    width: 637px;
+    height: 157px;
+}
+
+.button-iniciar-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    color: #FFFFFF; 
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#instrucoes-jogo {
+    position: absolute; 
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #FFFFFF; 
+    font-weight: bold;  
+    text-align: center; 
+    width: 75%;
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px; 
+    line-height: 121%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#boa-sorte {
+    position: absolute; 
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 96px; 
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 156%;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#jogo-memoria-logo-1 {
+    top: 33.5%;
+    position: absolute; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    width: 931px;
+    height: 760px;
+}
