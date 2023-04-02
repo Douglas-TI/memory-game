@@ -3,7 +3,7 @@ const cards = document.querySelectorAll('.card');
 let isFirstCardFlipped = false;
 let firstCard, secondCard;
 
-let totalFlippedCards = 14;
+let totalFlippedCards = 0;
 const totalCards = 16;
 
 let timeleft = 40;
@@ -19,12 +19,12 @@ function startCountdown() {
     let formattedTime = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
 
     document.getElementById("countdown").textContent = formattedTime;
-    //if(timeleft <= 0) 
+    if(timeleft <= 0) 
       window.open('loss.html', '_self');
   }, 1000);
 }
 
-startCountdown();
+//startCountdown();
 
 cards.forEach(card => {
   card.style.order = Math.floor(Math.random() * totalCards);

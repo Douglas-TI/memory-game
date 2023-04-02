@@ -1,75 +1,76 @@
-header.game {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    z-index: 1;
-  }
-
 body.game {
   background-image: url('../assets/imgs/common/bg-striped-blue.svg');
 }
 
-  #owl {
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-  }
+#memory-game-logo-2 {
+  top: 20%;
+  position: absolute; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
 
-  #lion {
-    position: absolute;
-    right: 10%;
-    bottom: 0;
-  }
+  width: 931px;
+  height: 760px;
+}
 
-  #countdown {
-    position: fixed;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 96px;
-    color: #FFFFFF;
-  }
+#owl {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+}
 
-  .board {
-    width: 640px;
-    height: 640px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
-  }
+#lion {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+}
 
-  .card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    margin: 5px;
+#countdown {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 96px;
+  color: #FFFFFF;
+}
 
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
+.board {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
 
-  }
+.card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
 
-  .card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
-  }
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
 
-  .card.flip {
-    transform: rotateY(180deg);
-  }
+}
 
-  .front-face,
-  .back-face {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-  }
+.card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
 
-  .front-face {
-    transform: rotateY(180deg);
-  }
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
