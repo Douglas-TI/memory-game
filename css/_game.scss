@@ -1,4 +1,4 @@
-  header.game {
+header.game {
     position: fixed;
     top: 0;
     left: 0;
@@ -7,13 +7,9 @@
     z-index: 1;
   }
 
-  body.game {
-    height: 100vh;
-    display: flex;
-    background-image: url('../assets/imgs/common/bg-stripped-blue.svg');
-    background-size: cover;
-    background-position: center;
-  }
+body.game {
+  background-image: url('../assets/imgs/common/bg-striped-blue.svg');
+}
 
   #owl {
     position: absolute;

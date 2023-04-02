@@ -1,8 +1,13 @@
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
   }
+
+  body {
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
 
   .love-care-mili-logo {
     position: fixed; 
