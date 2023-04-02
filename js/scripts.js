@@ -19,10 +19,12 @@ function startCountdown() {
     let formattedTime = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
 
     document.getElementById("countdown").textContent = formattedTime;
-    if(timeleft <= 0) 
+    //if(timeleft <= 0) 
       window.open('loss.html', '_self');
   }, 1000);
 }
+
+startCountdown();
 
 cards.forEach(card => {
   card.style.order = Math.floor(Math.random() * totalCards);
