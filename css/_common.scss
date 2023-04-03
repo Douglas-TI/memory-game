@@ -3,8 +3,7 @@
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
     display: flex;
     background-size: cover;
     background-position: center;
@@ -17,8 +16,8 @@ body {
 }
 
 .memory-game-logo-2 {
-  width: 256.37px;
-  height: 861.88px;
+  width: 80%;
+  height: 25%;
  
   background-image: url('../assets/imgs/common/memory-game-logo-1.png');
 }
