@@ -71,6 +71,15 @@ function disableCardPair() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
+  let lion = document.getElementById("lion");
+  lion.classList.add("jump");
+  let owl = document.getElementById("owl");
+  owl.classList.add("jump");
+  setTimeout(() => {
+    lion.classList.remove("jump");
+    owl.classList.remove("jump");
+  }, 700);
+
   resetVariables();
   totalFlippedCards += 2;
 

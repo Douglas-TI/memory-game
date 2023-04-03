@@ -17,3 +17,12 @@ body.loss {
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
+
+.emoji-loss {
+    background-image: url('../assets/imgs/common/crying-face.png');
+    width: 244px;
+    height: 244px;
+    top: 30%;
+    left: 35%;
+    position: absolute;
+}
