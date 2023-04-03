@@ -1,1 +1,3 @@
-Jogo da memória feito com Javascript.
+Jogo da memória feito com Javascript(tela vertical).
+</br>
+https://douglas-ti.github.io/memory-game/pages/
