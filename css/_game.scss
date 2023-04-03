@@ -21,14 +21,11 @@ body.game {
   bottom: 0;
 }
 
-#countdown {
+.countdown {
   position: fixed;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Quicksand', sans-serif;
-  font-size: 96px;
-  color: #FFFFFF;
 }
 
 .board {
