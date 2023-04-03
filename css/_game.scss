@@ -69,14 +69,14 @@ body.game {
 }
 
 .movement-animation-lion {
-  animation: move-right-animation 3s infinite alternate;
+  animation: move-right-left-animation 3s infinite alternate;
 }
 
 .movement-animation-owl {
-  animation: move-left-animation 3s infinite alternate;
+  animation: move-left-right-animation 3s infinite alternate;
 }
 
-@keyframes move-right-animation {
+@keyframes move-right-left-animation {
   0% {
     transform: translateX(0);
   }
@@ -88,7 +88,7 @@ body.game {
   }
 }
 
-@keyframes move-left-animation {
+@keyframes move-left-right-animation {
   0% {
     transform: translateX(0);
   }

@@ -12,6 +12,7 @@ body.win {
 }
 
 #colorful-shapes {
+    background-image: url('../assets/imgs/win/colorful-shapes.svg');
     position: absolute;
     width: 915px;
     height: 911px;
@@ -32,4 +33,12 @@ body.win {
     top: 30%;
     left: 35%;
     position: absolute;
+}
+
+.love-care-logo-win {
+    position: fixed; 
+    border: none;
+    top: 92.6%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }

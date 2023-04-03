@@ -22,24 +22,15 @@ body {
   background-image: url('../assets/imgs/common/memory-game-logo-1.png');
 }
 
-.love-care-mili-logo {
-  background-image: url('../assets/imgs/common/love-care-mili-logo.svg');
+.love-care-logo-1 {
+  background-image: url('../assets/imgs/common/love-care-mili-logo-1.svg');
 
-  position: fixed; 
-  border: none;
-  top: 92.6%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
   width: 190px;
   height: 153px;
 }
 
-.love-care-mili-logo-2 {
-  position: fixed; 
-  border: none;
-  top: 92.6%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+.love-care-logo-2 {
+  background-image: url('../assets/imgs/common/love-care-mili-logo-2.svg');
   width: 290px;
   height: 233px;
 }
@@ -50,6 +41,7 @@ body {
   border-radius: 30px;
   width: 733px;
   height: 157px;
+  border: none;
 }
 
 .button-pink-1 {
@@ -58,6 +50,7 @@ body {
   border-radius: 30px;
   width: 637px;
   height: 157px;
+  border: none;
 }
 
 .default-font {
@@ -95,4 +88,16 @@ body {
 
   font-size: 58px;
   line-height: 121%;
+}
+
+.emoji-grinning-squinting-face-1 {
+  background-image: url('../assets/imgs/common/grinning-squinting-face.png');
+  width: 244px;
+  height: 244px;
+}
+
+.emoji-crying-face-1 {
+    background-image: url('../assets/imgs/common/crying-face.png');
+    width: 244px;
+    height: 244px;
 }
