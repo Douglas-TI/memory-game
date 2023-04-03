@@ -2,14 +2,11 @@ body.game {
   background-image: url('../assets/imgs/common/bg-striped-blue.svg');
 }
 
-#memory-game-logo-2 {
+.memory-game-logo-game {
   top: 20%;
   position: absolute; 
   left: 50%; 
   transform: translate(-50%, -50%);
-
-  width: 931px;
-  height: 760px;
 }
 
 #owl {
@@ -51,7 +48,6 @@ body.game {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
-
 }
 
 .card:active {

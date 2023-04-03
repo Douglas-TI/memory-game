@@ -1,23 +1,14 @@
 body.win {
-    background-image: url('../assets/imgs/win/bg-striped-green.svg');
+    background-image: url('../assets/imgs/common/bg-striped-green.svg');
 }
 
-#msg-win {
+.msg-win {
     position: absolute; 
     top: 60%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     width: 913px;
     height: 476px;
-
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 150px;
-    line-height: 150px;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #colorful-shapes {
@@ -25,4 +16,11 @@ body.win {
     width: 915px;
     height: 911px;
     top: 30%;
+}
+
+.button-play-again-win {
+    position: fixed; 
+    top: 80.8%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
