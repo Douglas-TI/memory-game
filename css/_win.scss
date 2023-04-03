@@ -4,7 +4,7 @@ body.win {
 
 .msg-win {
     position: absolute; 
-    top: 60%; 
+    top: 54%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     width: 913px;
@@ -14,29 +14,30 @@ body.win {
 #colorful-shapes {
     background-image: url('../assets/imgs/win/colorful-shapes.svg');
     position: absolute;
-    width: 915px;
-    height: 911px;
-    top: 30%;
+    width: 910px;
+    height: 700px;
+    left: 10%;
+    top: 32%;
 }
 
 .button-play-again-win {
     position: fixed; 
-    top: 80.8%; 
+    top: 73.8%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
 
-.emoji-win {
-
-    top: 30%;
-    left: 35%;
+#emoji-win {
+    top: 28%;
+    left: 43%;
     position: absolute;
+    scale: 175%;
 }
 
 .love-care-logo-win {
     position: fixed; 
     border: none;
-    top: 92.6%; 
+    bottom: 0%;
     left: 50%; 
     transform: translate(-50%, -50%); 
 }

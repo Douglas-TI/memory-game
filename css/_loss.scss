@@ -6,28 +6,29 @@ body.loss {
     position: absolute;
     width: 913px;
     height: 476px;
-    top: 60%; 
+    top: 54%; 
     left: 50%; 
     transform: translate(-50%, -50%);
 }
 
 .button-play-again-loss {
     position: fixed; 
-    top: 80.8%; 
+    bottom: 18%;
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
 
-.emoji-loss {
-    top: 30%;
-    left: 35%;
+#emoji-loss {
+    top: 28%;
+    left: 43%;
     position: absolute;
+    scale: 175%;
 }
 
 .love-care-logo-loss {
     position: fixed; 
     border: none;
-    top: 92.6%; 
+    bottom: 0%;
     left: 50%; 
     transform: translate(-50%, -50%); 
 }

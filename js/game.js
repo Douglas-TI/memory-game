@@ -4,7 +4,7 @@ let isFirstCardFlipped = false;
 let firstCard, secondCard;
 
 let totalFlippedCards = 0;
-const totalCards = 16;
+const totalCards = 12;
 
 let timeleft = 40;
 let timerIsRunning = true;

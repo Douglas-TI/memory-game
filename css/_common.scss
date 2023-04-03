@@ -3,7 +3,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     display: flex;
     background-size: cover;
     background-position: center;
@@ -12,14 +12,14 @@ body {
 .memory-game-logo-1 {
   width: 86%;
   height:40%;
-  background-image: url('../assets/imgs/common/memory-game-logo-1.png');
+  background-image: url('../assets/imgs/common/memory-game-logo-1.svg');
 }
 
 .memory-game-logo-2 {
   width: 80%;
-  height: 25%;
+  height: 15%;
  
-  background-image: url('../assets/imgs/common/memory-game-logo-1.png');
+  background-image: url('../assets/imgs/common/memory-game-logo-2.svg');
 }
 
 .love-care-logo-1 {
@@ -88,12 +88,6 @@ body {
 
   font-size: 380%;
   line-height: 121%;
-}
-
-.emoji-grinning-squinting-face-1 {
-  background-image: url('../assets/imgs/common/grinning-squinting-face.png');
-  width: 244px;
-  height: 244px;
 }
 
 .emoji-crying-face-1 {
