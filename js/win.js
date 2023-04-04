@@ -32,3 +32,26 @@ function confettiAnimation() {
       );
     }, 250);
   }
+
+const logo = document.getElementById("logo-win");
+let holdTimeout = null;
+let isPressed = false;
+
+logo.addEventListener("mousedown", () => {
+  holdTimeout = setTimeout(startLogoRotation, 5000);
+});
+
+function startLogoRotation() {
+  logo.classList.add('logo-3d');
+  isPressed = true;
+  confettiAnimation();
+  confettiAnimation();
+  confettiAnimation();
+  confettiAnimation();
+  confettiAnimation();
+}
+
+function stopLogoRotation() {
+  logo.classList.remove('logo-3d');
+  isPressed = false;
+}
