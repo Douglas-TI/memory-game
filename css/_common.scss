@@ -3,6 +3,8 @@
 }
 
 body {
+    @extend .disable-selection;
+
     height: 100%;
     display: flex;
     background-size: cover;
@@ -94,4 +96,11 @@ body {
     background-image: url('../assets/imgs/common/crying-face.png');
     width: 244px;
     height: 244px;
+}
+
+.disable-selection {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none; 
 }
