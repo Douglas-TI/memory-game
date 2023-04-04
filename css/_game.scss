@@ -11,7 +11,7 @@ body.game {
 
 .countdown {
   position: fixed;
-  bottom: 7%;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -19,7 +19,7 @@ body.game {
 .board {
   width: 950px;
   height: 950px;
-  margin: 500px auto 0 70px;
+  margin: 600px auto 0 70px;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
