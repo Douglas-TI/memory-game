@@ -49,6 +49,11 @@ function startLogoRotation() {
   confettiAnimation();
   confettiAnimation();
   confettiAnimation();
+  confettiAnimation();
+
+  logo.removeEventListener("mousedown", () => {
+    holdTimeout = setTimeout(startLogoRotation, 5000);
+  });
 }
 
 function stopLogoRotation() {
