@@ -42,18 +42,18 @@ logo.addEventListener("mousedown", () => {
 });
 
 function startLogoRotation() {
-  logo.classList.add('logo-3d');
-  isPressed = true;
-  confettiAnimation();
-  confettiAnimation();
-  confettiAnimation();
-  confettiAnimation();
-  confettiAnimation();
-  confettiAnimation();
+  if(isPressed)
+    return;
 
-  logo.removeEventListener("mousedown", () => {
-    holdTimeout = setTimeout(startLogoRotation, 5000);
-  });
+  isPressed = true;
+
+  logo.classList.add('logo-3d');
+  confettiAnimation();
+  confettiAnimation();
+  confettiAnimation();
+  confettiAnimation();
+  confettiAnimation();
+  confettiAnimation();
 }
 
 function stopLogoRotation() {
