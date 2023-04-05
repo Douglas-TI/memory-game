@@ -109,3 +109,14 @@ body.game {
 .jump {
   animation: jump-animation 0.7s ease-out;
 }
+
+.piscar {
+  color: yellow;
+  animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+  50% {
+    opacity: 0;
+  }
+}

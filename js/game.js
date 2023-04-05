@@ -18,7 +18,12 @@ function startCountdown() {
     let seconds = timeleft % 60;
     let formattedTime = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
 
-    document.getElementById("countdown").textContent = formattedTime;
+    let countdown = document.getElementById("countdown")
+    countdown.textContent = formattedTime;
+
+    if(timeleft == 10)
+      countdown.classList.add("piscar-tempo");
+
     if(timeleft <= 0) 
       window.open('loss.html', '_self');
   }, 1000);
