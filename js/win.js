@@ -29,5 +29,5 @@ function stopLogoRotation() {
 }
 
 window.addEventListener('load', function() {
-  container.style.opacity = 1;
+  containerwin.style.opacity = 1;
 });

@@ -24,8 +24,8 @@ function startCountdown() {
     if(timeleft == 10)
       countdown.classList.add("piscar-tempo");
 
-    if(timeleft <= 0) 
-      validateWin();
+    validateWin();
+
   }, 1000);
 }
 
@@ -116,13 +116,13 @@ function validateWin() {
       window.open('win.html', '_self');
     }, 1500);
   }
-  else {
-    pauseCountdown();
-    document.body.style.opacity = 0;
-    setTimeout(() => {
-      window.open('loss.html', '_self');
-    }, 1500);
-  }
+  else if(timeleft <= 0 && timerIsRunning) {
+      pauseCountdown();
+      document.body.style.opacity = 0;
+      setTimeout(() => {
+        window.open('loss.html', '_self');
+      }, 1500);
+    }
 }
 
 function unflipCardPair() {
