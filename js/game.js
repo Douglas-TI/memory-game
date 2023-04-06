@@ -25,7 +25,7 @@ function startCountdown() {
       countdown.classList.add("piscar-tempo");
 
     if(timeleft <= 0) 
-      window.open('loss.html', '_self');
+      validateWin();
   }, 1000);
 }
 
@@ -114,6 +114,13 @@ function validateWin() {
     document.body.style.opacity = 0;
     setTimeout(() => {
       window.open('win.html', '_self');
+    }, 1500);
+  }
+  else {
+    pauseCountdown();
+    document.body.style.opacity = 0;
+    setTimeout(() => {
+      window.open('loss.html', '_self');
     }, 1500);
   }
 }
