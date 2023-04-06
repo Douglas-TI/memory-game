@@ -3,7 +3,7 @@ const cards = document.querySelectorAll('.card');
 let isFirstCardFlipped = false;
 let firstCard, secondCard;
 
-let totalFlippedCards = 10;
+let totalFlippedCards = 0;
 const totalCards = 12;
 
 let timeleft = 40;
