@@ -93,8 +93,12 @@ function disableCardPair() {
     tsparticles.style.display = 'none';
   }, 3000);
 
-  if(totalFlippedCards == totalCards)
-    window.open('win.html', '_self');
+  if(totalFlippedCards == totalCards) {
+    document.body.style.opacity = 0;
+    setTimeout(() => {
+      window.open('win.html', '_self');
+    }, 2000);
+  }
 }
 
 function unflipCardPair() {

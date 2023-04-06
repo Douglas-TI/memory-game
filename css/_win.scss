@@ -1,5 +1,7 @@
 body.win {
     background-image: url('../assets/imgs/common/bg-striped-green.svg');
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .msg-win {

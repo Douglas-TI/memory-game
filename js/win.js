@@ -27,3 +27,7 @@ function stopLogoRotation() {
   logo.classList.remove('logo-3d');
   isPressed = false;
 }
+
+window.addEventListener('load', function() {
+  document.body.style.opacity = 1;
+});
