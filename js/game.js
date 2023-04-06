@@ -3,7 +3,7 @@ const cards = document.querySelectorAll('.card');
 let isFirstCardFlipped = false;
 let firstCard, secondCard;
 
-let totalFlippedCards = 0;
+let totalFlippedCards = 10;
 const totalCards = 12;
 
 let timeleft = 40;
@@ -96,14 +96,14 @@ function disableCardPair() {
   explosions();
   setTimeout(() => {
     tsparticles.style.display = 'none';
-  }, 3000);
+  }, 2000);
 
   if(totalFlippedCards == totalCards) {
     pauseCountdown();
     document.body.style.opacity = 0;
     setTimeout(() => {
       window.open('win.html', '_self');
-    }, 2000);
+    }, 1500);
   }
 }
 
