@@ -24,7 +24,7 @@ function startCountdown() {
     if(timeleft == 10)
       countdown.classList.add("piscar-tempo");
 
-    if(timeleft <= 0 && totalFlippedCards) 
+    if(timeleft <= 0) 
       window.open('loss.html', '_self');
   }, 1000);
 }
@@ -81,6 +81,16 @@ function disableCardPair() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
+  resetVariables();
+  totalFlippedCards += 2;
+
+  animalsJump();
+  explosionsEffects();
+
+  validateWin();
+}
+
+function animalsJump() {
   let lion = document.getElementById("lion");
   lion.classList.add("jump");
   let owl = document.getElementById("owl");
@@ -89,15 +99,16 @@ function disableCardPair() {
     lion.classList.remove("jump");
     owl.classList.remove("jump");
   }, 700);
+}
 
-  resetVariables();
-  totalFlippedCards += 2;
-
+function explosionsEffects() {
   explosions();
   setTimeout(() => {
     tsparticles.style.display = 'none';
   }, 2000);
+}
 
+function validateWin() {
   if(totalFlippedCards == totalCards) {
     pauseCountdown();
     document.body.style.opacity = 0;
