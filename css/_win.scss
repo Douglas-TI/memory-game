@@ -16,7 +16,7 @@ body.win {
 
 .msg-win {
     position: absolute; 
-    top: 54%; 
+    top: 48%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     width: 913px;
@@ -34,13 +34,13 @@ body.win {
 
 .button-play-again-win {
     position: fixed; 
-    top: 73.8%; 
+    top: 67%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
 
 #emoji-win {
-    top: 28%;
+    top: 22%;
     left: 43%;
     position: absolute;
     scale: 175%;
