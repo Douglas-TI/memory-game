@@ -24,9 +24,14 @@ function startCountdown() {
     if(timeleft == 10)
       countdown.classList.add("piscar-tempo");
 
-    if(timeleft <= 0) 
+    if(timeleft <= 0 && totalFlippedCards) 
       window.open('loss.html', '_self');
   }, 1000);
+}
+
+function pauseCountdown() {
+  clearInterval(countdownTimer);
+  timerIsRunning = false;
 }
 
 startCountdown();
@@ -94,6 +99,7 @@ function disableCardPair() {
   }, 3000);
 
   if(totalFlippedCards == totalCards) {
+    pauseCountdown();
     document.body.style.opacity = 0;
     setTimeout(() => {
       window.open('win.html', '_self');
