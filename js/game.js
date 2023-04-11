@@ -116,8 +116,9 @@ function validateWin() {
       window.open('win.html', '_self');
     }, 1500);
   }
-  else if(timeleft <= 0 && timerIsRunning) {
+  else if(timeleft == 0 && timerIsRunning) {
       pauseCountdown();
+      cards.forEach(card => card.removeEventListener('click', flipCard));
       document.body.style.opacity = 0;
       setTimeout(() => {
         window.open('loss.html', '_self');
